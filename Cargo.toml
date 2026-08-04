@@ -1,26 +1,26 @@
 [package]
 name = "armature-lambda"
 version = "0.3.0"
-edition.workspace = true
-rust-version.workspace = true
-authors.workspace = true
-license.workspace = true
+edition = "2024"
+rust-version = "1.94.1"
+authors = ["Joseph Quinn <quinn.josephr@proton.me>"]
+license = "Apache-2.0"
 repository = "https://github.com/quinnjr/armature-lambda"
-homepage.workspace = true
+homepage = "https://quinnjr.github.io/armature"
 description = "AWS Lambda runtime adapter for Armature applications"
 keywords = ["lambda", "serverless", "aws", "armature", "api-gateway"]
 categories = ["web-programming", "asynchronous"]
 
 [dependencies]
 # Armature core
-armature-core = { path = "../armature-core", version = "0" }
+armature-core = { version = "0" }
 
 # AWS Lambda runtime
 lambda_http = "1.2"
 lambda_runtime = "1.2"
 
 # AWS SDK (optional, for AWS service access)
-armature-aws = { path = "../armature-aws", version = "0", optional = true }
+armature-aws = { version = "0", optional = true }
 
 # Async runtime
 tokio = { version = "1.52", features = ["macros", "rt-multi-thread"] }
