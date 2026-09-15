@@ -16,18 +16,18 @@ categories = ["web-programming", "asynchronous"]
 armature-core = { version = "0.9" }
 
 # AWS Lambda runtime
-lambda_http = "1.2"
-lambda_runtime = "1.2"
+lambda_http = "1.3"
+lambda_runtime = "1.4"
 
 # AWS SDK (optional, for AWS service access)
 armature-aws = { version = "0.2", optional = true }
 
 # Async runtime
-tokio = { version = "1.52", features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.53", features = ["macros", "rt-multi-thread"] }
 async-trait = "0.1"
 
 # HTTP types
-http = "1.4"
+http = "1.5"
 bytes = "1.12"
 
 # Serialization
@@ -43,7 +43,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
 
 [dev-dependencies]
 cargo-husky = { version = "1.5", default-features = false, features = ["user-hooks"] }
-tokio = { version = "1.52", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
+tokio = { version = "1.53", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
 
 [features]
 default = []
