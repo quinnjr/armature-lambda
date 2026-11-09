@@ -13,7 +13,7 @@ categories = ["web-programming", "asynchronous"]
 
 [dependencies]
 # Armature core
-armature-core = { version = "0.12" }
+armature-core = { version = "0.13" }
 
 # AWS Lambda runtime
 lambda_http = "1.3"
